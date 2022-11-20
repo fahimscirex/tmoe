@@ -96,7 +96,12 @@ class SettingsFragment : BaseHierarchyFragment() {
             functionSwitch(
                 ForceBlurChatAvailable, "ForceBlurChatAvailable",  R.string.ForceBlurChatAvailable
             )
-
+            functionSwitch(
+                DisablePremiumStickerAnimation, "DisablePremiumStickerAnimation",  R.string.DisablePremiumStickerAnimation
+            )
+            functionSwitch(
+                KeepVideoMuted, "KeepVideoMuted", R.string.KeepVideoMuted
+            )
         }
         category("LostMsgMitigation", R.string.LostMsgMitigation) {
             functionSwitch(
@@ -106,6 +111,18 @@ class SettingsFragment : BaseHierarchyFragment() {
                 AddReloadMsgBtn.INSTANCE,
                 "AddReloadMsgBtn", R.string.AddReloadMsgBtn,
                 "AddReloadMsgBtnDesc", R.string.AddReloadMsgBtnDesc
+            )
+            functionSwitch(
+                DatabaseCorruptionWarning,
+                "DatabaseCorruptionWarning", R.string.DatabaseCorruptionWarning,
+                "DatabaseCorruptionWarningDesc", R.string.DatabaseCorruptionWarningDesc
+            )
+        }
+        category("Export Data", R.string.ExportData) {
+            functionSwitch(
+                DumpGroupMember,
+                "DumpGroupMember", R.string.DumpGroupMember,
+                "DumpGroupMemberDesc", R.string.DumpGroupMemberDesc
             )
         }
         category("Misc", R.string.Misc) {
